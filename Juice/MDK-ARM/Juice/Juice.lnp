@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"juice\startup_stm32f103xb.o"
+"juice\main.o"
+"juice\gpio.o"
+"juice\usart.o"
+"juice\stm32f1xx_it.o"
+"juice\stm32f1xx_hal_msp.o"
+"juice\stm32f1xx_hal_gpio_ex.o"
+"juice\stm32f1xx_hal_tim.o"
+"juice\stm32f1xx_hal_tim_ex.o"
+"juice\stm32f1xx_hal_uart.o"
+"juice\stm32f1xx_hal.o"
+"juice\stm32f1xx_hal_rcc.o"
+"juice\stm32f1xx_hal_rcc_ex.o"
+"juice\stm32f1xx_hal_gpio.o"
+"juice\stm32f1xx_hal_dma.o"
+"juice\stm32f1xx_hal_cortex.o"
+"juice\stm32f1xx_hal_pwr.o"
+"juice\stm32f1xx_hal_flash.o"
+"juice\stm32f1xx_hal_flash_ex.o"
+"juice\stm32f1xx_hal_exti.o"
+"juice\system_stm32f1xx.o"
+--strict --scatter "Juice\Juice.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Juice.map" -o Juice\Juice.axf
