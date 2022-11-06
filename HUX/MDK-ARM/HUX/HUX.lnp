@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"hux\startup_stm32f103xb.o"
+"hux\main.o"
+"hux\gpio.o"
+"hux\tim.o"
+"hux\stm32f1xx_it.o"
+"hux\stm32f1xx_hal_msp.o"
+"hux\stm32f1xx_hal_gpio_ex.o"
+"hux\stm32f1xx_hal_tim.o"
+"hux\stm32f1xx_hal_tim_ex.o"
+"hux\stm32f1xx_hal.o"
+"hux\stm32f1xx_hal_rcc.o"
+"hux\stm32f1xx_hal_rcc_ex.o"
+"hux\stm32f1xx_hal_gpio.o"
+"hux\stm32f1xx_hal_dma.o"
+"hux\stm32f1xx_hal_cortex.o"
+"hux\stm32f1xx_hal_pwr.o"
+"hux\stm32f1xx_hal_flash.o"
+"hux\stm32f1xx_hal_flash_ex.o"
+"hux\stm32f1xx_hal_exti.o"
+"hux\system_stm32f1xx.o"
+--strict --scatter "HUX\HUX.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "HUX.map" -o HUX\HUX.axf
